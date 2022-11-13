@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #28b463;
+}
+
+/*-------header section start-------*/
+.container {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), #18201b),
+    url(images/bg1.jpg);
+}
+
+.header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 25px;
+  cursor: pointer;
+  color: #f0f3f4;
+  letter-spacing: 2px;
+}
+
+span,
+.active {
+  color: #28b463;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+nav ul li::after {
+  display: block;
+  width: 0;
+  height: 3px;
+  content: "";
+  background-color: #28b463;
+  transition: all ease 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+nav ul li a {
+  font-size: 13px;
+  color: #f0f3f4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #f0f3f4;
+  border-radius: 3px;
+  padding: 6.5px 15px;
+  transition: all ease 0.5s;
+  border: 1px solid #28b463;
+  background-color: transparent;
+}
+
+button:hover {
+  color: #f0f3f4;
+  background-color: #28b463;
+}
+
+.main-font {
+  text-align: center;
+  margin: auto;
+  width: 65%;
+  margin-top: 200px;
+}
+
+h4 {
+  color: #f0f3f4;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+h1 {
+  color: #2ecc71;
+  font-family: tahoma;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+
+p {
+  font-family: sans-serif;
+  color: #f0f3f4;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 1px solid #2ecc71;
+  text-decoration: none;
+  color: #f0f3f4;
+  outline: 0;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: all ease 0.5s;
+}
+
+.btn:hover {
+  background-color: #2ecc71;
+}
+
+/*-------header section end-------*/
+
+/*-------about section start-------*/
+#about {
+  background-color: #1e3250;
+  width: 100%;
+  height: 100vh;
+}
+
+.about {
+  width: 80%;
+  margin: auto;
+  padding: 25px;
+}
+
+.heading {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.title {
+  color: #2ecc71;
+  font-family: tahoma;
+  letter-spacing: 2px;
+  font-size: 28px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 80px;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.title::after {
+  content: "";
+  width: 120px;
+  height: 5px;
+  background: #2ecc71;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article {
+  width: 100%;
+}
+
+button {
+  text-align: center;
+}
+
+img {
+  margin-left: 20px;
+  border-radius: 3px;
+  width: 400px;
+}
+
+/*-------about section end-------*/
+
+/*-------content section start-------*/
+.categories {
+  margin: 70px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.middle1 {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  background-color: #18201b;
+  border-radius: 3px;
+}
+
+.middle2 {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  background-color: #2ecc71;
+  border-radius: 3px;
+}
+
+.middle3 {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  background-color: #2097ce;
+  border-radius: 3px;
+}
+
+.samll-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+/*-------content section end-------*/
+/*-------project section start-------*/
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.project1 {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  border-radius: 3px;
+  background-color: #5225ce;
+}
+
+.project2 {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  border-radius: 3px;
+  background-color: #7eaa90;
+}
+
+.project3 {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  border-radius: 3px;
+  background-color: #9fce1f;
+}
+
+.project4 {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  border-radius: 3px;
+  background-color: #c2681e;
+}
+
+/*-------project section end-------*/
+/*-------link section start-------*/
+.link {
+  padding: 20px;
+  display: flex;
+  border-top: 3px solid #000;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.footer-1 ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.footer-2 ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.footer-3 ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.footer-1,
+.footer-2,
+.footer-3,
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*-------link section end-------*/
+.footer {
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  background: #1e3250;
+}
+
+/*-------responsive section start-------*/
+@media screen and (max-width: 960px) {
+  .header {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  nav ul li {
+    margin-right: 9px;
+  }
+
+  nav ul li a {
+    font-size: 8px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+
+  .main-font {
+    width: 50%;
+    margin-top: 200px;
+    flex-direction: column;
+  }
+
+  h4 {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  h1 {
+    letter-spacing: 1px;
+  }
+
+  p {
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    padding: 8px 11px;
+  }
+}
+
+/*-------responsive section end-------*/
